@@ -6,7 +6,7 @@ module.exports = function(homebridge) {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
 
-  homebridge.registerAccessory("homebridge-foscam-p1", "FoscamP1Accessory", FoscamP1Accessory);
+  homebridge.registerAccessory("homebridge-foscam-p1", "FoscamP1", FoscamP1Accessory);
 }
 
 function FoscamP1Accessory(log, config) {
@@ -77,7 +77,7 @@ FoscamP1Accessory.prototype.getState3 = function(callback) {
 }
 
 FoscamP1Accessory.prototype.getServices = function() {
-  return [this.service1, this.service2. this.service3];
+  return [this.service1, this.service2, this.service3];
 }
 
 function xmlToJson(url, callback) {

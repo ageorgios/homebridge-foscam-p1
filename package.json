@@ -1,6 +1,6 @@
 {
-  "name": "homebridge-foscam-humidity",
-  "version": "1.0.0",
+  "name": "homebridge-foscam-p1",
+  "version": "1.0.1",
   "description": "Homebridge Plugin for Foscam P1",
   "main": "index.js",
   "scripts": {
